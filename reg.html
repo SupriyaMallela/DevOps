@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo Registration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f6aeae;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .registration-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .form-group input[type="submit"]:active {
+            background-color: #1e7e34;
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-group .checkbox-label {
+            display: inline-block;
+            color: #555;
+        }
+
+        .form-group .terms {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .form-group .terms a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        .form-group .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Expo Registration</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="" disabled selected>Select your industry</option>
+                    <option value="tech">Technology</option>
+                    <option value="health">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <option value="education">Education</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Expo Event:</label>
+                <select id="event" name="event" required>
+                    <option value="" disabled selected>Select an event</option>
+                    <option value="innovation">Tech Innovation Expo</option>
+                    <option value="wellness">Health & Wellness Expo</option>
+                    <option value="arts">Creative Arts Expo</option>
+                    <option value="startup">Startup Pitch Expo</option>
+                    <option value="sustainability">Sustainability Expo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
